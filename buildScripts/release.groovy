@@ -28,7 +28,6 @@ pipeline {
                             git credentialsId: 'github-bot-ssh', url: "git@github.com:microprofile/${params.module}.git", branch: params.branch
                     }
                 }
-            }
         }
         stage("Execute Release") {
             steps {
